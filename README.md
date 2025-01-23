@@ -32,7 +32,8 @@
 To integrate the `video_thumbnail` package into your project, you need to make the following modifications in the package directory:
 
 The location should be something like this:
-```C:\Users\user\AppData\Local\Pub\Cache\hosted\pub.dev\video_thumbnail-0.5.3\
+```
+C:\Users\user\AppData\Local\Pub\Cache\hosted\pub.dev\video_thumbnail-0.5.3\
 ```
 
 ### 1. Update the Android Manifest File

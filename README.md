@@ -7,6 +7,7 @@
 
 - **Error Handling**:
   - Fixed issues related to project and folder structure, ensuring compatibility and proper functioning of the application.
+  - Fixed video_thumbnail package issue
   - Reorganized the project directories and resolved configuration mismatches to align with Flutter and Android requirements.
 
 ---
@@ -23,6 +24,56 @@
   - Potential Solution: Implement custom certificate handling or update the server with trusted certificates.
 
 ---
+# Building the application
+  - To build the application, you have to comment out the package or make changes to the video thumbnail package.
+
+## Modifying the Video Thumbnail Package
+
+To integrate the `video_thumbnail` package into your project, you need to make the following modifications in the package directory:
+
+The location should be something like this:
+```C:\Users\user\AppData\Local\Pub\Cache\hosted\pub.dev\video_thumbnail-0.5.3\
+```
+
+### 1. Update the Android Manifest File
+1. Open the `AndroidManifest.xml` file located in the `src/main` folder.
+2. Remove the `package` attribute so that the file looks like this:
+   ```xml
+   <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+       <!-- other manifest content -->
+   </manifest>
+   ```
+
+### 2. Add a Namespace to `build.gradle`
+1. Open the `build.gradle` file in the `android` directory of the package.
+2. Add the `namespace` property under the `android` block to look something like this:
+   ```gradle
+   android {
+       namespace "xyz.justsoft.video_thumbnail"
+       // ... rest of android config
+   }
+   ```
+
+### Example Directory Structure
+Here’s how the modified directory structure should look:
+
+```
+video_thumbnail/
+├── android/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── AndroidManifest.xml
+│   ├── build.gradle
+```
+
+### Additional Notes
+- These changes ensure compatibility with the latest Android Gradle Plugin versions.
+- Remember to clean and rebuild your project after making these modifications:
+  ```bash
+  flutter clean
+  flutter pub get
+  ```
+
 
 # Date: 23 October 2024
 

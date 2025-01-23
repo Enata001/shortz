@@ -2,7 +2,6 @@
 
 # Date: 23 January 2025
 
-# Date: 23 October 2024
 ## Progress
 ### Implemented Features:
 
@@ -25,6 +24,7 @@
 
 ---
 
+# Date: 23 October 2024
 
 ## Summary
 

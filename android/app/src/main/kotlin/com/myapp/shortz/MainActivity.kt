@@ -1,4 +1,4 @@
-package com.retrytech.bubbly
+package com.myapp.shortz
 
 import android.content.Intent
 import androidx.annotation.NonNull

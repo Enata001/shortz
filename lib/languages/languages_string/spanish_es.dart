@@ -1,4 +1,4 @@
-import 'package:bubbly/languages/languages_keys.dart';
+import 'package:shortz/languages/languages_keys.dart';
 
 const spanishES = {
   LKey.dataNotFound: "Datos no encontrados...!",

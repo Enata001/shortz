@@ -1,4 +1,4 @@
-import 'package:bubbly/languages/languages_keys.dart';
+import 'package:shortz/languages/languages_keys.dart';
 
 const koreanKO = {
   LKey.dataNotFound: "데이터를 찾을 수 없습니다...!",

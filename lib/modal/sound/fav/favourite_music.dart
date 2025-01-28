@@ -1,4 +1,4 @@
-import 'package:bubbly/modal/sound/sound.dart';
+import 'package:shortz/modal/sound/sound.dart';
 
 class FavouriteMusic {
   int? _status;

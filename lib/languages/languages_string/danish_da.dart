@@ -1,4 +1,4 @@
-import 'package:bubbly/languages/languages_keys.dart';
+import 'package:shortz/languages/languages_keys.dart';
 
 const danishDA = {
   LKey.dataNotFound: "Data ikke fundet...!",

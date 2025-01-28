@@ -1,16 +1,16 @@
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:bubbly/custom_view/common_ui.dart';
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/modal/user_video/user_video.dart';
-import 'package:bubbly/utils/app_res.dart';
-import 'package:bubbly/utils/assert_image.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
-import 'package:bubbly/utils/url_res.dart';
+import 'package:shortz/custom_view/common_ui.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/modal/user_video/user_video.dart';
+import 'package:shortz/utils/app_res.dart';
+import 'package:shortz/utils/assert_image.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
+import 'package:shortz/utils/url_res.dart';
 import 'package:bubbly_camera/bubbly_camera.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:ffmpeg_kit_flutter_full/ffmpeg_kit.dart';

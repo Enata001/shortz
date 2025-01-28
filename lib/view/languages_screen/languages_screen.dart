@@ -1,9 +1,9 @@
-import 'package:bubbly/custom_view/app_bar_custom.dart';
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/utils/app_res.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
+import 'package:shortz/custom_view/app_bar_custom.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/utils/app_res.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';

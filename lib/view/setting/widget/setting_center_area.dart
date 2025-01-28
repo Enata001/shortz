@@ -1,27 +1,27 @@
 import 'dart:developer';
 
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/custom_view/common_ui.dart';
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/main.dart';
-import 'package:bubbly/modal/setting/setting.dart';
-import 'package:bubbly/modal/user/user.dart';
-import 'package:bubbly/utils/app_res.dart';
-import 'package:bubbly/utils/assert_image.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/utils/firebase_res.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/key_res.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
-import 'package:bubbly/utils/session_manager.dart';
-import 'package:bubbly/utils/url_res.dart';
-import 'package:bubbly/view/dialog/confirmation_dialog.dart';
-import 'package:bubbly/view/languages_screen/languages_screen.dart';
-import 'package:bubbly/view/qrcode/my_qr_code_screen.dart';
-import 'package:bubbly/view/verification/verification_screen.dart';
-import 'package:bubbly/view/wallet/wallet_screen.dart';
-import 'package:bubbly/view/webview/webview_screen.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/custom_view/common_ui.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/main.dart';
+import 'package:shortz/modal/setting/setting.dart';
+import 'package:shortz/modal/user/user.dart';
+import 'package:shortz/utils/app_res.dart';
+import 'package:shortz/utils/assert_image.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/utils/firebase_res.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/key_res.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
+import 'package:shortz/utils/session_manager.dart';
+import 'package:shortz/utils/url_res.dart';
+import 'package:shortz/view/dialog/confirmation_dialog.dart';
+import 'package:shortz/view/languages_screen/languages_screen.dart';
+import 'package:shortz/view/qrcode/my_qr_code_screen.dart';
+import 'package:shortz/view/verification/verification_screen.dart';
+import 'package:shortz/view/wallet/wallet_screen.dart';
+import 'package:shortz/view/webview/webview_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutter/material.dart';
@@ -290,7 +290,7 @@ class _SettingCenterAreaState extends State<SettingCenterArea> {
       (value) {
         Navigator.pushAndRemoveUntil(
             context,
-            MaterialPageRoute(builder: (context) => MyBubblyApp()),
+            MaterialPageRoute(builder: (context) => MyShortzApp()),
             (Route<dynamic> route) => false);
       },
     );
@@ -406,7 +406,7 @@ class _SettingCenterAreaState extends State<SettingCenterArea> {
               Navigator.pop(context);
               Navigator.pushAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => MyBubblyApp()),
+                  MaterialPageRoute(builder: (context) => MyShortzApp()),
                   (Route<dynamic> route) => false);
             },
           );

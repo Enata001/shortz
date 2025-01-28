@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/modal/chat/chat.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/const_res.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/modal/chat/chat.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/const_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:video_player/video_player.dart';

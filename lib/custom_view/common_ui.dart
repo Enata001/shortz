@@ -1,4 +1,4 @@
-import 'package:bubbly/utils/colors.dart';
+import 'package:shortz/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';

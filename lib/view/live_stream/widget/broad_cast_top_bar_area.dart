@@ -1,10 +1,10 @@
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/utils/assert_image.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
-import 'package:bubbly/view/live_stream/model/broad_cast_screen_view_model.dart';
-import 'package:bubbly/view/live_stream/widget/blur_tab.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/utils/assert_image.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
+import 'package:shortz/view/live_stream/model/broad_cast_screen_view_model.dart';
+import 'package:shortz/view/live_stream/widget/blur_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';

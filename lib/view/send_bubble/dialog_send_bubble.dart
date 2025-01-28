@@ -1,16 +1,16 @@
 import 'dart:ui';
 
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/custom_view/common_ui.dart';
-import 'package:bubbly/custom_view/send_coin_result.dart';
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/modal/user_video/user_video.dart';
-import 'package:bubbly/utils/assert_image.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
-import 'package:bubbly/utils/session_manager.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/custom_view/common_ui.dart';
+import 'package:shortz/custom_view/send_coin_result.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/modal/user_video/user_video.dart';
+import 'package:shortz/utils/assert_image.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
+import 'package:shortz/utils/session_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';

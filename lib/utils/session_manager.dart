@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:core';
 
-import 'package:bubbly/modal/setting/setting.dart';
-import 'package:bubbly/modal/user/user.dart';
-import 'package:bubbly/utils/key_res.dart';
+import 'package:shortz/modal/setting/setting.dart';
+import 'package:shortz/modal/user/user.dart';
+import 'package:shortz/utils/key_res.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SessionManager {

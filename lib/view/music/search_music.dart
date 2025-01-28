@@ -1,6 +1,6 @@
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/custom_view/data_not_found.dart';
-import 'package:bubbly/modal/sound/sound.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/custom_view/data_not_found.dart';
+import 'package:shortz/modal/sound/sound.dart';
 import 'package:flutter/material.dart';
 
 import 'widget/music_card.dart';

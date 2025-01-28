@@ -4,21 +4,23 @@ import 'dart:isolate';
 import 'dart:ui';
 
 import 'package:audioplayers/audioplayers.dart';
-import 'package:bubbly/custom_view/common_ui.dart';
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/modal/sound/sound.dart';
-import 'package:bubbly/utils/app_res.dart';
-import 'package:bubbly/utils/assert_image.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
-import 'package:bubbly/utils/url_res.dart';
-import 'package:bubbly/view/camera/widget/seconds_tab.dart';
-import 'package:bubbly/view/dialog/confirmation_dialog.dart';
-import 'package:bubbly/view/music/music_screen.dart';
-import 'package:bubbly/view/preview_screen.dart';
 import 'package:bubbly_camera/bubbly_camera.dart';
+import 'package:bubbly_camera/bubbly_camera.dart';
+import 'package:shortz/custom_view/common_ui.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/modal/sound/sound.dart';
+import 'package:shortz/utils/app_res.dart';
+import 'package:shortz/utils/assert_image.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
+import 'package:shortz/utils/url_res.dart';
+import 'package:shortz/view/camera/widget/seconds_tab.dart';
+import 'package:shortz/view/dialog/confirmation_dialog.dart';
+import 'package:shortz/view/music/music_screen.dart';
+import 'package:shortz/view/preview_screen.dart';
+
 import 'package:ffmpeg_kit_flutter_full/ffmpeg_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -76,7 +78,7 @@ class _CameraScreenState extends State<CameraScreen> {
       FlutterDownloader.registerCallback(downloadCallback);
       downloadMusic();
     }
-    MethodChannel(ConstRes.bubblyCamera).setMethodCallHandler((payload) async {
+    MethodChannel(ConstRes.shortzCamera).setMethodCallHandler((payload) async {
       gotoPreviewScreen(payload.arguments.toString());
       return;
     });

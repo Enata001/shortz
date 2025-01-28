@@ -1,7 +1,7 @@
-import 'package:bubbly/custom_view/app_bar_custom.dart';
-import 'package:bubbly/custom_view/common_ui.dart';
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/utils/url_res.dart';
+import 'package:shortz/custom_view/app_bar_custom.dart';
+import 'package:shortz/custom_view/common_ui.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/utils/url_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:webview_flutter/webview_flutter.dart';

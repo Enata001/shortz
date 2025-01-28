@@ -1,8 +1,8 @@
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/custom_view/data_not_found.dart';
-import 'package:bubbly/modal/followers/follower_following_data.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/view/profile/profile_screen.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/custom_view/data_not_found.dart';
+import 'package:shortz/modal/followers/follower_following_data.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/view/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'item_follower.dart';

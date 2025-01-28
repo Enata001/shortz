@@ -3,7 +3,7 @@ class ConstRes {
   static const String apiKey = 'dev123';
   static final String baseUrl = '${base}api/';
 
-  static final String itemBaseUrl = 'https://d139xnf84yjx1z.cloudfront.net/bubbly/';
+  static final String itemBaseUrl = 'https://d139xnf84yjx1z.cloudfront.net/shortz/';
 
   // Agora Credential
   static final String customerId = '--------';
@@ -12,7 +12,7 @@ class ConstRes {
   // Starting screen open end_user_license_agreement sheet link
   static final String agreementUrl = "https://work.bubbletokapp.com/";
 
-  static final String bubblyCamera = 'bubbly_camera';
+  static final String shortzCamera = 'shortz_camera';
   static final bool isDialog = false;
 }
 

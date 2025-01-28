@@ -1,6 +1,6 @@
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/modal/user_video/user_video.dart';
-import 'package:bubbly/utils/colors.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/modal/user_video/user_video.dart';
+import 'package:shortz/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class LikeUnLikeButton extends StatefulWidget {

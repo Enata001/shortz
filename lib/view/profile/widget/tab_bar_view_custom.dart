@@ -1,6 +1,6 @@
-import 'package:bubbly/utils/assert_image.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
+import 'package:shortz/utils/assert_image.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
 import 'package:flutter/material.dart';
 
 class TabBarViewCustom extends StatefulWidget {

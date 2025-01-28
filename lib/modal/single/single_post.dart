@@ -1,4 +1,4 @@
-import 'package:bubbly/modal/user_video/user_video.dart';
+import 'package:shortz/modal/user_video/user_video.dart';
 
 class SinglePost {
   int? _status;

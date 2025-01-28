@@ -1,9 +1,9 @@
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/custom_view/common_ui.dart';
-import 'package:bubbly/custom_view/data_not_found.dart';
-import 'package:bubbly/modal/search/search_user.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/view/search/widget/item_search_user.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/custom_view/common_ui.dart';
+import 'package:shortz/custom_view/data_not_found.dart';
+import 'package:shortz/modal/search/search_user.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/view/search/widget/item_search_user.dart';
 import 'package:flutter/material.dart';
 
 class SearchUserScreen extends StatefulWidget {

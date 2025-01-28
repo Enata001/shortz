@@ -1,8 +1,8 @@
-import 'package:bubbly/main.dart';
-import 'package:bubbly/modal/user/user.dart';
-import 'package:bubbly/utils/app_res.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/utils/key_res.dart';
+import 'package:shortz/main.dart';
+import 'package:shortz/modal/user/user.dart';
+import 'package:shortz/utils/app_res.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/utils/key_res.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';

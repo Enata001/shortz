@@ -1,6 +1,6 @@
-import 'package:bubbly/custom_view/app_bar_custom.dart';
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/view/setting/widget/setting_center_area.dart';
+import 'package:shortz/custom_view/app_bar_custom.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/view/setting/widget/setting_center_area.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

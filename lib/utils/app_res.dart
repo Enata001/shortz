@@ -1,4 +1,4 @@
-import 'package:bubbly/utils/const_res.dart';
+import 'package:shortz/utils/const_res.dart';
 
 class AppRes {
   static const String emptyName = 'Unknown';

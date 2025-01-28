@@ -1,16 +1,16 @@
 import 'dart:ui';
 
-import 'package:bubbly/custom_view/banner_ads_widget.dart';
-import 'package:bubbly/custom_view/image_place_holder.dart';
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/modal/live_stream/live_stream.dart';
-import 'package:bubbly/utils/app_res.dart';
-import 'package:bubbly/utils/assert_image.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
-import 'package:bubbly/view/live_stream/model/live_stream_view_model.dart';
+import 'package:shortz/custom_view/banner_ads_widget.dart';
+import 'package:shortz/custom_view/image_place_holder.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/modal/live_stream/live_stream.dart';
+import 'package:shortz/utils/app_res.dart';
+import 'package:shortz/utils/assert_image.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
+import 'package:shortz/view/live_stream/model/live_stream_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';

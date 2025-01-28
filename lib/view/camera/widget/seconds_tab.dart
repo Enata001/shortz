@@ -1,4 +1,4 @@
-import 'package:bubbly/utils/colors.dart';
+import 'package:shortz/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class SecondsTab extends StatelessWidget {

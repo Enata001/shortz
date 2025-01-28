@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:bubbly/modal/setting/setting.dart';
-import 'package:bubbly/utils/session_manager.dart';
+import 'package:shortz/modal/setting/setting.dart';
+import 'package:shortz/utils/session_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 

@@ -1,5 +1,5 @@
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/modal/sound/sound.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/modal/sound/sound.dart';
 import 'package:flutter/material.dart';
 
 import 'item_discover.dart';

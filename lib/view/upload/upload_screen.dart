@@ -1,14 +1,14 @@
 import 'dart:io';
 
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/custom_view/common_ui.dart';
-import 'package:bubbly/custom_view/privacy_policy_view.dart';
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/utils/app_res.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
-import 'package:bubbly/utils/session_manager.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/custom_view/common_ui.dart';
+import 'package:shortz/custom_view/privacy_policy_view.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/utils/app_res.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
+import 'package:shortz/utils/session_manager.dart';
 import 'package:detectable_text_field/detectable_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

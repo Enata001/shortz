@@ -1,17 +1,17 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:bubbly/languages/languages_keys.dart';
-import 'package:bubbly/service/ads_service.dart';
-import 'package:bubbly/utils/assert_image.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/key_res.dart';
-import 'package:bubbly/utils/my_loading/my_loading.dart';
-import 'package:bubbly/utils/session_manager.dart';
-import 'package:bubbly/utils/theme.dart';
-import 'package:bubbly/view/chat_screen/chat_screen.dart';
-import 'package:bubbly/view/main/main_screen.dart';
+import 'package:shortz/languages/languages_keys.dart';
+import 'package:shortz/service/ads_service.dart';
+import 'package:shortz/utils/assert_image.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/key_res.dart';
+import 'package:shortz/utils/my_loading/my_loading.dart';
+import 'package:shortz/utils/session_manager.dart';
+import 'package:shortz/utils/theme.dart';
+import 'package:shortz/view/chat_screen/chat_screen.dart';
+import 'package:shortz/view/main/main_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -92,7 +92,7 @@ class _MyAppState extends State<MyApp> {
             locale: Locale(selectedLanguage),
             fallbackLocale: const Locale(byDefaultLanguage),
             theme: myLoading.isDark ? darkTheme() : lightTheme(),
-            home: MyBubblyApp(),
+            home: MyShortzApp(),
           );
         },
       ),
@@ -100,12 +100,12 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-class MyBubblyApp extends StatefulWidget {
+class MyShortzApp extends StatefulWidget {
   @override
-  _MyBubblyAppState createState() => _MyBubblyAppState();
+  _MyShortzAppState createState() => _MyShortzAppState();
 }
 
-class _MyBubblyAppState extends State<MyBubblyApp> {
+class _MyShortzAppState extends State<MyShortzApp> {
   FirebaseMessaging firebaseMessaging = FirebaseMessaging.instance;
   SessionManager _sessionManager = SessionManager();
   final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
@@ -183,7 +183,7 @@ class _MyBubblyAppState extends State<MyBubblyApp> {
     );
 
     const AndroidNotificationChannel channel = AndroidNotificationChannel(
-        'bubbly', // id
+        'shortz', // id
         'Notification', // title
         playSound: true,
         enableLights: true,

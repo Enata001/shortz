@@ -1,6 +1,6 @@
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/modal/sound/sound.dart';
-import 'package:bubbly/view/music/widget/music_card.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/modal/sound/sound.dart';
+import 'package:shortz/view/music/widget/music_card.dart';
 import 'package:flutter/material.dart';
 
 class FavouritePage extends StatefulWidget {

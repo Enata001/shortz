@@ -1,9 +1,9 @@
-import 'package:bubbly/modal/chat/chat.dart';
-import 'package:bubbly/utils/colors.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/utils/font_res.dart';
-import 'package:bubbly/utils/key_res.dart';
-import 'package:bubbly/utils/session_manager.dart';
+import 'package:shortz/modal/chat/chat.dart';
+import 'package:shortz/utils/colors.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/utils/font_res.dart';
+import 'package:shortz/utils/key_res.dart';
+import 'package:shortz/utils/session_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:photo_view/photo_view.dart';

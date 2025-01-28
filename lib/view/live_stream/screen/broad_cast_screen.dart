@@ -1,8 +1,8 @@
-import 'package:bubbly/modal/user/user.dart';
-import 'package:bubbly/view/live_stream/model/broad_cast_screen_view_model.dart';
-import 'package:bubbly/view/live_stream/widget/broad_cast_top_bar_area.dart';
-import 'package:bubbly/view/live_stream/widget/live_stream_bottom_filed.dart';
-import 'package:bubbly/view/live_stream/widget/live_stream_chat_list.dart';
+import 'package:shortz/modal/user/user.dart';
+import 'package:shortz/view/live_stream/model/broad_cast_screen_view_model.dart';
+import 'package:shortz/view/live_stream/widget/broad_cast_top_bar_area.dart';
+import 'package:shortz/view/live_stream/widget/live_stream_bottom_filed.dart';
+import 'package:shortz/view/live_stream/widget/live_stream_chat_list.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 

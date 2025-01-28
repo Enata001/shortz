@@ -1,9 +1,9 @@
-import 'package:bubbly/api/api_service.dart';
-import 'package:bubbly/custom_view/common_ui.dart';
-import 'package:bubbly/custom_view/data_not_found.dart';
-import 'package:bubbly/modal/user_video/user_video.dart';
-import 'package:bubbly/utils/const_res.dart';
-import 'package:bubbly/utils/session_manager.dart';
+import 'package:shortz/api/api_service.dart';
+import 'package:shortz/custom_view/common_ui.dart';
+import 'package:shortz/custom_view/data_not_found.dart';
+import 'package:shortz/modal/user_video/user_video.dart';
+import 'package:shortz/utils/const_res.dart';
+import 'package:shortz/utils/session_manager.dart';
 import 'package:flutter/material.dart';
 
 import 'widget/item_search_video.dart';

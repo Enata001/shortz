@@ -263,7 +263,10 @@ class ApiService {
         UrlRes.authorization: SessionManager.accessToken,
       },
     );
-    // print(response.statusCode);
+    print(SessionManager.accessToken);
+    print("This is the json0");
+    print(response.request?.url);
+    print("This is the json");
     final responseJson = jsonDecode(response.body);
     return UserNotifications.fromJson(responseJson);
   }

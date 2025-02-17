@@ -1,38 +1,23 @@
-package com.myapp.shortz// MyApplication.kt (create this file if it doesn't exist in your project)
+package com.myapp.shortz
 
-import io.flutter.app.FlutterApplication
+import android.app.Application
 import io.flutter.embedding.engine.FlutterEngine
-import io.flutter.plugin.common.PluginRegistry
+import io.flutter.embedding.engine.FlutterEngineGroup
+import io.flutter.embedding.engine.dart.DartExecutor
 import io.flutter.plugins.GeneratedPluginRegistrant
 
-//import io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
-//import vn.hunghd.flutterdownloader.FlutterDownloaderPlugin
-
-internal class MyApplication : FlutterApplication(), PluginRegistry.PluginRegistrantCallback {
-    override fun registerWith(registry: PluginRegistry) {
-        //
-        // Integration note:
-        //
-        // In Flutter, in order to work in background isolate, plugins need to register with
-        // a special instance of `FlutterEngine` that serves for background execution only.
-        // Hence, all (and only) plugins that require background execution feature need to 
-        // call `registerWith` in this method. 
-        //
-        // The default `GeneratedPluginRegistrant` will call `registerWith` of all plugins
-        // integrated in your application. Hence, if you are using `FlutterDownloaderPlugin`
-        // along with other plugins that need UI manipulation, you should register
-        // `FlutterDownloaderPlugin` and any 'background' plugins explicitly like this:
-        // 
-        if (!registry.hasPlugin("vn.hunghd.flutterdownloader.FlutterDownloaderPlugin")) {
-//            FlutterDownloaderPlugin.registerWith(registry.registrarFor("vn.hunghd.flutterdownloader.FlutterDownloaderPlugin"))
-        }
-
-        GeneratedPluginRegistrant.registerWith(FlutterEngine(applicationContext))
-    }
-
+class MyApplication : Application() {
+    lateinit var flutterEngine: FlutterEngine
 
     override fun onCreate() {
         super.onCreate()
-//        FlutterFirebaseMessagingBackgroundService.setPluginRegistrant(this)
+
+
+        flutterEngine = FlutterEngine(this)
+        flutterEngine.dartExecutor.executeDartEntrypoint(
+            DartExecutor.DartEntrypoint.createDefault()
+        )
+
+        GeneratedPluginRegistrant.registerWith(flutterEngine)
     }
 }

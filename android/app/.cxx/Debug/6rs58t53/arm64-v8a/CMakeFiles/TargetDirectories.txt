@@ -1,0 +1,2 @@
+D:/projects/shortz/android/app/.cxx/Debug/6rs58t53/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/projects/shortz/android/app/.cxx/Debug/6rs58t53/arm64-v8a/CMakeFiles/rebuild_cache.dir

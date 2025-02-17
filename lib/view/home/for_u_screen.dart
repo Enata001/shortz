@@ -26,12 +26,12 @@ class _ForYouScreenState extends State<ForYouScreen> with AutomaticKeepAliveClie
 
   @override
   void initState() {
+    super.initState();
     callApiForYou(
       (p0) {
         initVideoPlayer();
       },
     );
-    super.initState();
   }
 
   @override
@@ -126,15 +126,16 @@ class _ForYouScreenState extends State<ForYouScreen> with AutomaticKeepAliveClie
   Future _initializeControllerAtIndex(int index) async {
     if (mList.length > index && index >= 0) {
       /// Create new controller
-      final VideoPlayerController controller =
-          VideoPlayerController.networkUrl(Uri.parse(ConstRes.itemBaseUrl + (mList[index].postVideo ?? '')));
-
+      // final VideoPlayerController controller =
+      //     VideoPlayerController.networkUrl(Uri.parse(ConstRes.itemBaseUrl + (mList[index].postVideo ?? '')));
+final VideoPlayerController controller =
+          VideoPlayerController.networkUrl(Uri.parse("https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"));
+print('This controller is called');
       /// Add to [controllers] list
       controllers[index] = controller;
 
       await controller.initialize();
       if (this.mounted) {
-        /// Initialize
         setState(() {});
       }
 
@@ -168,7 +169,7 @@ class _ForYouScreenState extends State<ForYouScreen> with AutomaticKeepAliveClie
         /// Pause
         controller.pause();
 
-        /// Reset postiton to beginning
+        /// Reset position to beginning
         controller.seekTo(const Duration());
         log('==================================');
         log('🚀🚀🚀 STOPPED $index');

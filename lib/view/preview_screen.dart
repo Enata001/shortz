@@ -147,7 +147,7 @@ class _PreviewScreenState extends State<PreviewScreen> {
       ..initialize().then((_) {
         _videoPlayerController?.play();
         setState(() {});
-        _videoPlayerController?.setLooping(true);
+        _videoPlayerController?.setLooping(false);
       });
   }
 

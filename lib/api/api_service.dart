@@ -263,10 +263,6 @@ class ApiService {
         UrlRes.authorization: SessionManager.accessToken,
       },
     );
-    print(SessionManager.accessToken);
-    print("This is the json0");
-    print(response.request?.url);
-    print("This is the json");
     final responseJson = jsonDecode(response.body);
     return UserNotifications.fromJson(responseJson);
   }
@@ -524,13 +520,15 @@ class ApiService {
     File? postSound,
     File? soundImage,
   }) async {
-    var request = http.MultipartRequest(
-      "POST",
-      Uri.parse(UrlRes.addPost),
-    );
+    var request = http.MultipartRequest("POST", Uri.parse(UrlRes.addPost));
+    print(request.url);
     request.headers[UrlRes.uniqueKey] = ConstRes.apiKey;
     request.headers[UrlRes.authorization] = SessionManager.accessToken;
+    request.headers["Content-Type"] = "multipart/form-data";
+
     request.fields[UrlRes.userId] = SessionManager.userId.toString();
+    print(SessionManager.userId.toString());
+
     if (postDescription.isNotEmpty) {
       request.fields[UrlRes.postDescription] = postDescription;
     }
@@ -538,53 +536,53 @@ class ApiService {
       request.fields[UrlRes.postHashTag] = postHashTag;
     }
     request.fields[UrlRes.isOriginalSound] = isOriginalSound;
+
     if (isOriginalSound == '1') {
       request.fields[UrlRes.soundTitle] = soundTitle!;
       request.fields[UrlRes.duration] = duration!;
       request.fields[UrlRes.singer] = singer!;
+
       if (postSound != null) {
         request.files.add(
-          http.MultipartFile(UrlRes.postSound, postSound.readAsBytes().asStream(), postSound.lengthSync(),
-              filename: postSound.path.split("/").last),
+          await http.MultipartFile.fromPath(UrlRes.postSound, postSound.path),
         );
       }
       if (soundImage != null) {
         request.files.add(
-          http.MultipartFile(UrlRes.soundImage, soundImage.readAsBytes().asStream(), soundImage.lengthSync(),
-              filename: soundImage.path.split("/").last),
+          await http.MultipartFile.fromPath(UrlRes.soundImage, soundImage.path),
         );
       }
     } else {
       request.fields[UrlRes.soundId] = soundId!;
     }
+
     if (postVideo != null) {
       request.files.add(
-        http.MultipartFile(UrlRes.postVideo, postVideo.readAsBytes().asStream(), postVideo.lengthSync(),
-            filename: postVideo.path.split("/").last),
+        await http.MultipartFile.fromPath(UrlRes.postVideo, postVideo.path),
       );
     }
     if (thumbnail != null) {
       request.files.add(
-        http.MultipartFile(UrlRes.postImage, thumbnail.readAsBytes().asStream(), thumbnail.lengthSync(),
-            filename: thumbnail.path.split("/").last),
+        await http.MultipartFile.fromPath(UrlRes.postImage, thumbnail.path),
       );
     }
 
     print('PARAMETER : ${request.fields}');
+    print('Values: ${request.files}' );
     print('AUTHORISATION : ${SessionManager.accessToken}');
     print('PARAMETER Files : ${request.files.map((e) => e.field)}');
 
     var response = await request.send();
-    log('Add Post : ${response.statusCode}');
     var respStr = await response.stream.bytesToString();
     final responseJson = jsonDecode(respStr);
+
+    log('Add Post : ${response.statusCode}');
     log('Add Post json: ${responseJson}');
-    // print(request.fields);
-    // print(UrlRes.addPost);
-    // print(responseJson);
     addCoin();
+
     return RestResponse.fromJson(responseJson);
   }
+
 
   Future<FavouriteMusic> getSearchSoundList(String keyword) async {
     client = http.Client();
@@ -864,9 +862,6 @@ class ApiService {
         UrlRes.uniqueKey: ConstRes.apiKey,
       },
     );
-    print('THis is the response');
-    print(response.body);
-    print('Done');
     SessionManager sessionManager = SessionManager();
     await sessionManager.initPref();
     sessionManager.saveSetting(response.body);

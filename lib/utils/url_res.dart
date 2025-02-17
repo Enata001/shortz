@@ -230,7 +230,7 @@ class UrlRes {
 
   static final String uniqueKey = 'unique-key';
   static final String authorization = 'Authorization';
-  static final String favourite = 'favourite';
+  static final String favourite ='favourite';
 
   static final String isLogin = 'is_login';
 

@@ -3,7 +3,7 @@ class ConstRes {
   static const String apiKey = 'dev123';
   static final String baseUrl = '${base}api/';
 
-  static final String itemBaseUrl = 'https://https://shortz.everests.co.uk/storage/';
+  static final String itemBaseUrl = 'https://shortz.everests.co.uk/storage/';
 
   // Agora Credential
   static final String customerId = 'c575b5922d4c4c7ab01561af71d39e96';

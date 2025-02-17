@@ -24,24 +24,25 @@ import 'package:intl/intl.dart';
 import 'package:video_player/video_player.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
-// ignore: must_be_immutable
+
 class ItemVideo extends StatefulWidget {
   final Data? videoData;
-  ItemVideoState? item;
+  final _ItemVideoState? item;
   final VideoPlayerController? videoPlayerController;
 
-  ItemVideo({this.videoData, this.videoPlayerController});
+  ItemVideo({this.videoData, this.videoPlayerController, this.item});
 
   @override
-  ItemVideoState createState() => ItemVideoState();
+  _ItemVideoState createState() => _ItemVideoState();
 }
 
-class ItemVideoState extends State<ItemVideo> {
+class _ItemVideoState extends State<ItemVideo> {
   bool isLogin = false;
   SessionManager sessionManager = SessionManager();
 
   @override
   void initState() {
+    Future.delayed(Duration.zero,(){});
     prefData();
     super.initState();
   }
@@ -54,6 +55,8 @@ class ItemVideoState extends State<ItemVideo> {
 
   @override
   Widget build(BuildContext context) {
+    print('This is the video source');
+    print(widget.videoPlayerController?.dataSource);
     return Stack(
       children: [
         InkWell(
@@ -346,8 +349,10 @@ class ItemVideoState extends State<ItemVideo> {
   void _onTap() {
     if (widget.videoPlayerController != null && widget.videoPlayerController!.value.isPlaying) {
       widget.videoPlayerController?.pause();
+      print('pause pressed');
     } else {
       widget.videoPlayerController?.play();
+      print('play pressed');
     }
   }
 

@@ -16,10 +16,10 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
 class UploadScreen extends StatefulWidget {
-  final String? postVideo;
   final String? thumbNail;
-  final String? sound;
+  final String? postVideo;
   final String? soundId;
+  final String? sound;
 
   UploadScreen({this.postVideo, this.thumbNail, this.sound, this.soundId});
 
@@ -36,8 +36,8 @@ class _UploadScreenState extends State<UploadScreen> {
 
   @override
   void initState() {
-    initSessionManager();
     super.initState();
+    initSessionManager();
   }
 
   @override
@@ -160,7 +160,7 @@ class _UploadScreenState extends State<UploadScreen> {
               SizedBox(height: 20),
               Center(
                 child: InkWell(
-                  onTap: () {
+                  onTap: () async{
                     FocusManager.instance.primaryFocus?.unfocus();
 
                     List<String> removeHasTag = [];
@@ -171,7 +171,7 @@ class _UploadScreenState extends State<UploadScreen> {
                     CommonUI.showLoader(context);
 
                     if (widget.soundId != null) {
-                      ApiService()
+                      await ApiService()
                           .addPost(
                         postVideo: File(widget.postVideo ?? ''),
                         thumbnail: File(widget.thumbNail ?? ''),
@@ -195,7 +195,7 @@ class _UploadScreenState extends State<UploadScreen> {
                         },
                       );
                     } else {
-                      ApiService()
+                    await  ApiService()
                           .addPost(
                         postVideo: File(widget.postVideo!),
                         thumbnail: File(widget.thumbNail!),
